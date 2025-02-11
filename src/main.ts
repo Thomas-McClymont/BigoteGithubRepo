@@ -1,6 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { provideRouter } from '@angular/router';
+import { InventoryListComponent } from './app/components/inventory-list/inventory-list.component';
+import { routes } from '@app/routes/app.routes';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(InventoryListComponent, {
+  providers: [provideRouter(routes)],
+});
