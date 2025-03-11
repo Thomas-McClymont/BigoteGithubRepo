@@ -1,9 +1,0 @@
-<div class="p-4">
-  <h2 class="text-xl font-bold">Car Parts Inventory</h2>
-  <ul>
-    <li *ngFor="let part of parts()">
-      {{ part.name }} - {{ part.brand }} ({{ part.quantity }} in stock)
-      <button (click)="remove(part.id)">Remove</button>
-    </li>
-  </ul>
-</div>

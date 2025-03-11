@@ -1,0 +1,144 @@
+$primary-color: #007bff;
+$secondary-color: #333;
+$light-bg: #f9f9f9;
+
+.landing-container {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+
+  .hero {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    padding: 100px 20px;
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .btn-primary {
+        background: white;
+        color: $primary-color;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .features {
+    //background: $light-bg;
+    padding: 60px 20px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .feature {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 250px;
+        text-align: center;
+
+        i {
+          font-size: 2rem;
+          color: $primary-color;
+        }
+
+        h3 {
+          margin: 10px 0;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 60px 20px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 20px auto;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+  }
+
+  .contact {
+    //background: $light-bg;
+    padding: 60px 20px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  footer {
+    background: $secondary-color;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+
+    .socials {
+      margin-top: 10px;
+
+      a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: 0.3s;
+      }
+    }
+  }
+}

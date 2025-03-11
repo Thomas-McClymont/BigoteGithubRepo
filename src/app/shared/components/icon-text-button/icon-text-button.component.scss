@@ -1,0 +1,10 @@
+button {
+  display: flex;
+  align-items: center;
+  gap: 8px; // Space between icon and text
+  font-size: 16px;
+
+  mat-icon {
+    font-size: 20px;
+  }
+}
