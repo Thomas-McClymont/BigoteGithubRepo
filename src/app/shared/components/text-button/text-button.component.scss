@@ -1,0 +1,78 @@
+.btn {
+  background-color: var(--background-color);
+  border: none;
+  color: #222;
+  outline: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #b7bef0;
+  --border-size: 4px;
+  --accent-color: #f0b7b7;
+}
+
+// BORDER POP
+.btn.btn-border-pop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid red;
+  transition: top, left, right, bottom 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before,
+.btn.btn-border-pop:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}
+
+// BORDER SLIDE
+.btn.btn-border-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn.btn-border-slide:hover::before,
+.btn.btn-border-slide:focus::before {
+  transform: scaleX(1);
+}
+
+.btn.btn-border-slide {
+  z-index: 1;
+}
+
+// BORDER UNDERLINE
+.btn.btn-border-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size);
+  background-color: var(--accent-color);
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+}
+
+.btn.btn-border-underline:hover::before,
+.btn.btn-border-underline:focus::before {
+  transform: scaleX(1);
+}

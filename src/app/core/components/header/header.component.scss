@@ -1,0 +1,25 @@
+header {
+  height: 92vh;
+  background-image: url("../../../../assets/images/optimized_image.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.logo-box {
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 100px;
+  width: 100px;
+}
+
+.logo {
+  height: 45px;
+}
+
+.heading-primary-main {
+  color: #fff;
+}

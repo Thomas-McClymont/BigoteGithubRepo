@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+
+  .nav-links {
+    display: flex;
+    gap: 16px;
+
+    @media (max-width: 768px) {
+      display: none; // Hide desktop nav on mobile
+    }
+  }
+
+  .mobile-menu-btn {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-flex;
+    }
+  }
+}
